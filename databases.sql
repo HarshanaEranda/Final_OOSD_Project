@@ -1,4 +1,3 @@
-create database projectid;
 show databases;
 use projectid;
 create table user_details (
