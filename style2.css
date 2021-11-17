@@ -51,6 +51,22 @@ h1,h2{
       height: 30px;
       border-radius:10px;
 }
+.side_menu li select {
+      font-size: 19px;
+      width: 200px;
+      height: 30px;
+      background-color: #050213fd;
+      color: white; 
+      border: none;
+}
+
+.side_menu li select:hover{
+      background-color: white;
+      color: #f05462;
+     
+}
+
+    
 .container{
       position: absolute;
       right: 0;
@@ -259,6 +275,9 @@ h1,h2{
       .side_menu li{
             font-size: 18px;
       }
+      .side_menu li select{
+            font-size: 18px;
+      }
       
 }
 @media screen and (max-width:940px) {
@@ -273,6 +292,12 @@ h1,h2{
             height: 40px;
 
       }
+      .side_menu li select{
+            width: 40px;
+            height:40px ;
+            display: none;
+      }
+     
       
 }
 @media screen and (max-width:940px){
