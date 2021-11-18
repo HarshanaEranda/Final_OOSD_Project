@@ -106,9 +106,6 @@
                       
                         if  ((pwd1==pwd_conform) && (pwd1.length>=8 && pwd1.length<=14)){
                             password_validate= true;
-
-                            
-
                         }
                         else{
                               password_validate= false;
@@ -121,9 +118,7 @@
                         var daten = new Date();
                         var Year = daten.getFullYear();
                         if ((parseInt(Year) - parseInt(Birthday.slice(0,4))) < 16){
-                              
-                              age_validate=false;
-                              
+                              age_validate=false;      
                         }
                         else{
                              age_validate= true;
@@ -132,8 +127,6 @@
                   function validation(){
                         if (password_validate && age_validate)
                               {alert("Create account successfully");
-                              
-                        
                         }
                         else if (!(password_validate )){
                               alert("Password conformation is wrong!! and must give strong password length.Charctor length must be in 8 to 14 range");
@@ -160,14 +153,7 @@
             <b> <label for="uname">Username</label></b>
             <input type="text" id="uname" placeholder="UserName" name="user_name" required>
             <br>
-            <!-- <b> <label for="Account_Type">Account Type</label></b><br>
-            <select>
-                  <option  selected disabled hidden >Select account type</option>
-                  <option style="text-align: center;">Student</option>
-                  <option style="text-align: center;">Person</option>
-                  
-            </select>
-            <br> -->
+            
             <b> <label for="address_">Address</label></b>
             <input type="text" id="address_" name="Address" placeholder="Your address.." required>
             <br>

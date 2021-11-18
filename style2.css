@@ -27,6 +27,8 @@ h1,h2{
       min-height: 100vh;
       display: flex; 
       flex-direction: column; 
+     
+      
 }
 .side_menu .barand_name{
       height: 20vh;
@@ -40,27 +42,29 @@ h1,h2{
       color: white;
       display: flex;
       align-items: center;
+      
 
 }
-.side_menu li:hover{
+.side_menu li:hover,li a:hover {
       background-color: white;
       color: #f05462;
 }
+
 .side_menu li img{
       width: 30px;
       height: 30px;
       border-radius:10px;
 }
-.side_menu li select {
+.side_menu li a {
       font-size: 19px;
-      width: 200px;
-      height: 30px;
+      /* width: 200px;
+      height: 30px; */
       background-color: #050213fd;
       color: white; 
       border: none;
 }
 
-.side_menu li select:hover{
+.side_menu li a:hover{
       background-color: white;
       color: #f05462;
      
