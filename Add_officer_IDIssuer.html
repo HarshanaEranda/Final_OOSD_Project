@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Add Officer</title>
+      <script>
+            function ShowDetails(){
+                  document.getElementById("Create_form").disabled=false;
+                  var Estate_Superintendent=document.getElementById("Officer_E")
+                  var Grama_Niladari=document.getElementById("Officer_G");
+                  var Divitional_Secretary=document.getElementById("Officer_D");
+                  var Principal=document.getElementById("Officer_P");
+                  var National_Identity_Card_Issuer=document.getElementById("Officer_N");
+                  var Disable_Tag=document.getElementById("Disable_Tag");
+                  var Deatils_NIC=document.getElementById("DeatilsN");
+                  var Officer_form=document.getElementById("Create_form");  
+                  var submit_button=document.getElementById("Submit_button");
+                  var Password=document.getElementById("Password");                      
+                  if( Estate_Superintendent.checked){  
+                        Officer_form.style.display="block";    
+                  }
+                  else if(Grama_Niladari.checked)
+                  {  document.getElementById("DeatilsG").style.display="block";
+                     document.getElementById("DeatilsD").style.display="block"; 
+                     Officer_form.style.display="block";
+                       }
+                  else if (Divitional_Secretary.checked){ 
+                        document.getElementById("DeatilsD").style.display="block";  
+                        Officer_form.style.display="block";
+                  }
+                  else if(Principal.checked){
+                        document.getElementById("DeatilsP").style.display="block";
+                        Officer_form.style.display="block";
+                  }
+                  else if(National_Identity_Card_Issuer.checked){
+                        Deatils_NIC.style.display="block";
+                  }
+                  Disable_Tag.disabled=true;
+                  Password.style.display="block";
+                  submit_button.style.display="block";
+                  
+                   
+            }
+      </script>
+      <link rel="stylesheet" href="bootstrap.css">
+      
+</head>
+<body style="background-color:#9886e6fd;">
+      
+                  
+           
+      
+      <div style="padding: 100px;  background-color: #9886e6fd; font-weight: bolder;">
+      <div><div><div>
+            
+            <form>
+                  <fieldset id="Disable_Tag" >
+                        <h2 style="color: black;  ">Select The Officer's Profession</h2>
+                        <br>
+                        <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" name="officer" id="Officer_E" onclick="ShowDetails()">
+                              <label class="form-check-label" for="Officer_E">Estate Superintendent</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" name="officer" id="Officer_D" onclick="ShowDetails()">
+                              <label class="form-check-label" for="Officer_D">Divitional Secretary</label>
+                        </div> <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" name="officer" id="Officer_G" onclick="ShowDetails()">
+                              <label class="form-check-label" for="Officer_G">Grama Niladari</label>
+                        </div> <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" name="officer" id="Officer_P" onclick="ShowDetails()">
+                              <label class="form-check-label" for="Officer_P">Principal</label>
+                        </div>
+                        <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" name="officer" id="Officer_N" onclick="ShowDetails()">
+                              <label class="form-check-label" for="Officer_N">National Identity Card Issuer</label>
+                        </div>
+                  
+                  </fieldset>
+                 
+                  <fieldset id="Create_form" style="display: none;" >
+                  <h2 style="color: black;  ">Create Officer Account</h2>
+                  <br>
+                  <div class="mb-3">
+                        <label for="exampleInputFname" class="form-label">Officer's Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputFname" aria-describedby="emailHelp" placeholder="Enter full name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email.address">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                        <label for="exampleInputIDnumber" class="form-label">Identity Number</label>
+                        <input type="text" class="form-control" id="exampleInputIDnumber" aria-describedby="emailHelp" placeholder="Enter identticard number">
+                  </div>
+                  <div class="mb-3">
+                        <label for="exampleInputMNumber" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="exampleInputMNumber" placeholder="Enter mobile number">
+                  </div></fieldset>
+                  
+                  
+                  
+                  
+                  <fieldset id="DeatilsP" style="display: none;">
+                        <div class="mb-3" >
+                              <label for="exampleInputSchool" class="form-label">Current Working School</label>
+                              <input type="text" class="form-control" id="exampleInputSchool" placeholder="Enter current working school">
+                        </div>
+                  </fieldset>
+                  <fieldset id="DeatilsG" style="display: none;">
+                        <div class="mb-3" >
+                              <label for="exampleInputGDivition" class="form-label">Grama Niladari Divition</label>
+                              <input type="text" class="form-control" id="exampleInputGDivition" placeholder="Enter current working grama niladari divition">
+                        </div>
+                  </fieldset>
+                  <fieldset id="DeatilsD" style="display: none;">
+                        <div class="mb-3" >
+                              <label for="exampleInputDSecretariat" class="form-label">Divitional Secretariat</label>
+                              <input type="text" class="form-control" id="exampleInputDSecretariat" placeholder="Enter current working divitional secretariat">
+                        </div>
+                  </fieldset> 
+            <fieldset id="DeatilsN" style="display: none;">
+                  <h2 style="color: black;  ">Create Identticard Issuer Account</h2>
+                  <div class="mb-3" >
+                        <label for="exampleInputCName" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="exampleInputCName" placeholder="Enter company name">
+                  </div>
+                  <div class="mb-3">
+                        <label for="exampleInputCEmail1" class="form-label">Company Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputCEmail1" aria-describedby="emailHelp" placeholder="Enter company email address">
+                        
+                  </div>
+                  <div class="mb-3">
+                        <label for="exampleInputCNumber" class="form-label">Contract Number</label>
+                        <input type="number" class="form-control" id="exampleInputCNumber" placeholder="Enter contract number">
+                  </div>
+
+            </fieldset>
+            <fieldset id="Password" style="display: none;">
+                  <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputCPassword" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" id="exampleInputCPassword" placeholder="Enter password,again">
+                        </div>
+            </fieldset>
+            <fieldset id="Submit_button" style="display: none;" ><button type="submit" class="btn btn-primary">Submit</button></fieldset>
+                </form>
+      </div> </div> </div>
+      
+</body>
+</html>
