@@ -136,6 +136,7 @@
     <section>
         <div class="container">
             <form>
+                <h1>Testing</h1>
                 <h1>Application for Identity Card</h1>
                 <!-- <h1><span id="msgx"></span></h1> -->
                 <div class="step step-1 active">
