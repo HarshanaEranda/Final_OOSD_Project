@@ -87,14 +87,9 @@
 
         body {
             background-color: cornsilk;
-            /* background-size: cover;
-            background-repeat: repeat;  */
-            /* text-align: center; */
-            /* margin-top:200px; */
         }
     </style>
 
-    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
 </head>
 
 <body>
@@ -103,17 +98,14 @@
             <fieldset>
                 <h1>Who are You?</h1>
                 <br>
-                <!-- <div class="mb-3 form-check"> -->
                 <div>
                     <input type="radio" class="check-input" name="applier" id="student" onclick="ShowDetails()">
                     <label class="check-label" for="student">A Student</label>
                 </div>
-                <!-- <div class="mb-3 form-check"> -->
                 <div>
                     <input type="radio" class="check-input" name="applier" id="estateWorker" onclick="ShowDetails()">
                     <label class="check-label" for="stateWorker">An Estate Worker</label>
                 </div>
-                <!-- <div class="mb-3 form-check"> -->
                 <div>
                     <input type="radio" class="check-input" name="applier" id="otherAppliers" onclick="ShowDetails()">
                     <label class="check-label" for="otherAppliers">Other</label>
@@ -192,7 +184,6 @@
                 </div>
             </filedset>
 
-            <!-- <button type="button" class="submit-btn">submit</button> -->
             <fieldset id="submit" style="display: none">
                 <br><a href="IdRequestForm.php"><button type="submit" id="submit-btn"
                         class="submit-btn">Submit</button></a>
